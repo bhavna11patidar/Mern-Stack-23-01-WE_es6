@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Extention:
+    1. Live Server 
+    2. Prettier
+    3. bracket pair colorizer
+    -->
+    <!-- <h1>Hello World </h1> -->
+    <script>
+        //1. variables: var, const, let
+       /* var x=10;
+        console.log(x);
+        {
+            var x=20;
+            console.log(x);  
+        }
+        console.log(x);
+        */
+
+        /*let x=10;
+        console.log(x);
+        {
+            let x=20;
+            console.log(x);
+        }
+        console.log(x);
+        */
+
+       /* const x=10;
+        console.log(x);
+        x=20;
+        console.log(x);
+        */
+
+
+
+        //2. Template/ String Literals
+        var msg="Welcome ";
+        var fname="Bhavna";
+        var lname=" Patidar";
+        var org=" Trycatch";
+        //console.log(x+y);
+        //console.log(msg+" "+fname+" "+lname+" To "+org+ " Classes");
+        //console.log(`${msg} ${fname} ${lname} to ${org} Classes!`);
+
+       // 3. Object Literals:
+       /*var emp={
+           name:"Bhavna Patidar",
+           org:"Trycatch Classes",
+           email:"bhavna@gmail.com",
+           contact:897654322,
+       }
+       console.log(emp.org);
+       */
+           var name="Bhavna Patidar";
+           var org="Trycatch Classes";
+           var email="bhavna@gmail.com";
+           var contact=897654322;
+           /*var obj={
+               name:name,
+               org:org, 
+               email:email,
+               contact:contact,
+           }
+           console.log(obj);
+           */
+           /*var obj={
+               name,
+               email,
+               org, 
+               contact,
+           }
+           console.log(obj);
+           */
+
+           //4. Descructuring
+
+          // var ar1=[1,2,3,4,5,6,7];
+           /*console.log(ar1[0]);
+           console.log(ar1[1]);
+           */
+           /*
+           var ar1=[1,2,3,4,5,6,7];
+           var [one, two, three, four]=ar1;
+           console.log(one);
+           console.log(two);
+           console.log(three);
+           */
+
+           /*var emp={
+           name:"Bhavna Patidar",
+           org:"Trycatch Classes",
+           email:"bhavna@gmail.com",
+           contact:897654322,
+            }
+           // console.log(emp.name);
+            //console.log(emp.email);
+            var {name,email, org, contact }=emp;
+            console.log(name);
+            console.log(email);
+            */
+
+
+
+            //5. Fat arrow function
+            /*function abc(){
+                console.log("Abc");
+            }
+            abc();
+            */
+            //var abc=()=>{console.log("Abc")};
+            //abc();
+            /*var abc=()=> console.log("Abc");
+            abc();
+            */
+           /* function abc(a,b,c){
+                console.log("Abc"+a+" "+b+" "+c);
+                console.log("Abc" +a+b+c);
+                console.log(a+b+c+"Abc");
+            }
+            abc(10,20,30);
+            */
+            
+            /*var abc=(a,b,c)=>console.log(a+b+c+"Abc");
+            abc(10,20,30);
+            */
+
+
+
+            //Rest Operator
+            /*function sum(a,b,c,d){
+                console.log(a+b+c+d);
+            }
+            sum(10,20,30,40);
+            */
+
+            /*function sum(...s){
+               // console.log(s);
+               var a=0;
+               for(var x=0; x<s.length; x++){
+                   a=a+s[x];
+               }
+               console.log(a);
+            }
+            sum(10,20);
+            */
+            /*function sum(name,org,...s){
+                console.log(`Welcome ${name}`);
+               var a=0;
+               for(var x=0; x<s.length; x++){
+                   a=a+s[x];
+               }
+               console.log(a);
+            }
+            sum("Bhavna","Trycatch",10,20,30);
+            */
+
+
+
+            //Spread Operator
+            /*var ar1=[1,2,3,4,5];
+            //var ar2=[...ar1,6,7,8,9,10];
+            var ar2=[6,7,8,9,10, ...ar1];
+            console.log(ar2);
+            */
+
+
+
+            //Default Argument
+            /*function emp_info(name, email, mobile, profile="Web Designer"){
+                console.log(`${name} ${email} ${mobile} ${profile}`);
+            }
+            emp_info("Bhavna", "bhavna@gmail.com", 1234567890, "Web Developer");
+            emp_info("Bhavna", "bhavna@gmail.com", 1234567890);
+            */
+
+
+
+            /* Task:
+            1. Swapping of 2 Nums
+            2. sum of array elements which r divisible by 3
+            */
+
+
+
+    </script>
+
+</body>
+</html>
