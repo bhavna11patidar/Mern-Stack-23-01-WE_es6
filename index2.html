@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar1=[11,42,63,34,65];
+        /*ar1.forEach((el,index)=>{
+            console.log(index+" "+el);
+        })
+        */
+
+      /*  var ar2=ar1.map((el,index)=>{
+            //return el;
+            return el*2;
+        })
+        console.log(ar2);
+        */
+
+
+        /*var ar2=ar1.filter((el, index)=>{
+            return el<40;
+        })
+        console.log(ar2);
+        */
+
+        /*var ar2=ar1.find((el,index)=>{
+            return el>40;
+        })
+        console.log(ar2);
+        */
+
+
+        /*
+        var ar2=ar1.reduce((sum,el,index)=>{
+            return sum=sum+el;
+        },0)
+        console.log(ar2);
+        */
+
+
+
+        let employees=[
+            {
+                name:"Emp 1",
+                email:"emp1@gmail.com",
+                contact:2345678,
+                job_profile:"Web Developer",
+                salary:30000,
+            },
+            {
+                name:"Emp 2",
+                email:"emp2@gmail.com",
+                contact:2345678,
+                job_profile:"App Developer",
+                salary:45000,
+            },
+            {
+                name:"Emp 3",
+                email:"emp3@gmail.com",
+                contact:2345678,
+                job_profile:"Web Developer",
+                salary:40000,
+            },
+            {
+                name:"Emp 4",
+                email:"emp4@gmail.com",
+                contact:2345678,
+                job_profile:"Web Developer",
+                salary:50000,
+            },
+            {
+                name:"Emp 5",
+                email:"emp5@gmail.com",
+                contact:2345678,
+                job_profile:"App Developer",
+                salary:35000,
+            }
+            
+        ]
+        class Employee{
+            constructor(data){
+               // console.log("Inside Constructor!!!");
+                //console.log(data);
+                this.data=data;
+            }
+
+            getEmployeeInfo(){
+           // console.log("Inside Get Employee Info!");
+            //console.log(this.data);
+                this.data.forEach((el)=>{
+                    console.log(`${el.name} ${el.email} ${el.contact} ${el.job_profile}`)
+                })
+            }
+
+            getEmployeeInfoAccordingToJobProfile(profile){
+               // console.log("Get Employee Info According To Job profile!!");  
+               let new_emp=this.data.filter((el)=>{
+                    return el.job_profile==profile;
+               })  
+               console.log(new_emp);
+            }
+
+            getParticularEmployeeInfoAccoringToEmail(email){
+                let new_emp=this.data.find((el,index)=>{
+                    return el.email==email;
+                })
+                console.log(new_emp);
+            }
+
+            getEmployeeAccordingToSalary(salary){
+                let new_emp=this.data.filter(el=>{
+                    return el.salary>salary;
+                })
+                return new_emp;
+           }
+        }
+
+        //getEmployeeInfo();
+         var empObj=new Employee(employees);
+        empObj.getEmployeeInfo();
+        empObj.getEmployeeInfoAccordingToJobProfile("App Developer");
+        empObj.getParticularEmployeeInfoAccoringToEmail("emp3@gmail.com");
+        var op=empObj.getEmployeeAccordingToSalary(40000);
+        console.log(op);
+        console.log(empObj.getEmployeeAccordingToSalary(35000));
+    </script>
+</body>
+</html>
